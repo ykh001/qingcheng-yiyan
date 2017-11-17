@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appwidget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/Clock_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="2">-->
+
+        <!--<TextClock-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="40dp"-->
+            <!--android:format24Hour="HH:mm"-->
+            <!--android:format12Hour="hh:mm"-->
+            <!--android:textStyle="normal"-->
+            <!--android:textColor="@color/white"/>-->
+        <!--<TextClock-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:format24Hour="dd月MM日 EEEE"-->
+            <!--android:format12Hour="dd月MM日 EEEE"-->
+            <!--android:fontFamily="sans-serif-light"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/white"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="#00000000"
+            android:text="@string/appwidget_text"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/appwidget_text_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="end"
+            android:text="——来自 XXXXXX"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
